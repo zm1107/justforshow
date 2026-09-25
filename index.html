@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="description" content="做个样子 JustForShow —— 批量提取数据文件的表头与前 N 行样例，1:1 镜像目录结构，秒级生成轻量测试数据集。完全本地运行：不联网、不上传任何数据。">
+<meta property="og:title" content="做个样子 JustForShow — 大文件做样，结构全保留">
+<meta property="og:description" content="批量提取 .xlsx / .xls / .csv 的表头与前 N 行样例，1:1 镜像目录结构，秒级生成轻量测试数据集。完全本地运行，公测期全功能免费。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://justforshow.weibaba.fun/">
+<meta property="og:image" content="https://justforshow.weibaba.fun/assets/img/og.png">
+<title>做个样子 JustForShow — 大文件做样，结构全保留 | 数据样例提取工具</title>
+<link rel="canonical" href="https://justforshow.weibaba.fun/">
+<link rel="alternate" hreflang="zh-CN" href="https://justforshow.weibaba.fun/">
+<link rel="alternate" hreflang="en" href="https://justforshow.weibaba.fun/en/">
+<link rel="alternate" hreflang="x-default" href="https://justforshow.weibaba.fun/">
+<link rel="stylesheet" href="/assets/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication",
+ "name":"JustForShow","operatingSystem":"Windows 10, Windows 11",
+ "applicationCategory":"UtilitiesApplication",
+ "url":"https://justforshow.weibaba.fun/","softwareVersion":"1.0.0",
+ "inLanguage":["zh-CN","en"],
+ "description":"Batch-extract the header and first N rows of .xlsx / .xls / .csv data files into a 1:1 mirrored folder structure, producing a lightweight sample dataset in seconds. Runs entirely offline.",
+ "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a class="brand" href="/"><img src="/favicon.png" alt="做个样子 JustForShow 图标">做个样子 Just<span class="dot">For</span>Show</a>
+    <div class="nav-links">
+      <a class="hide-sm" href="#features">功能</a>
+      <a class="hide-sm" href="#download">下载</a>
+      <a class="hide-sm" href="/privacy/">隐私政策</a>
+      <span class="lang-switch"><b>中文</b> · <a href="/en/" hreflang="en" lang="en">English</a></span>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <div class="hero-card">
+      <img class="hero-banner" src="/assets/img/web_logo.png" alt="做个样子 JustForShow">
+      <h1>大文件做样，<span class="key">结构全保留</span></h1>
+      <p class="pitch">批量提取数据文件的表头与前 N 行样例，1:1 镜像目录结构，秒级生成轻量测试数据集。</p>
+      <p class="sub">完全本地运行：不联网、不上传任何数据、不收集任何统计信息。</p>
+      <div class="platform-pills">
+        <span class="pill">✔ Windows 10 / 11</span>
+        <span class="pill">✔ .xlsx / .xls / .csv</span>
+        <span class="pill">✔ 完全本地运行</span>
+        <span class="pill hot">✔ 公测期全功能免费</span>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="https://apps.microsoft.com/detail/9P30MRGVSPJV">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          从微软商店免费下载
+        </a>
+        <a class="btn btn-ghost" href="#features">看看核心功能</a>
+      </div>
+    </div>
+    <div class="beta-note">
+      <span class="tag">公测进行时</span>
+      <span>当前为公测期：<b>全功能免费，无任何限制</b>。问题与建议欢迎反馈：<a href="mailto:feed@weibaba.fun">feed@weibaba.fun</a></span>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- ============ 核心功能 ============ -->
+  <section class="block" id="features">
+    <h2 class="title">样例该有的样子，它都保留</h2>
+    <p class="lead">不是简单截断，而是把目录结构与文件形态 1:1 搬进样例集——拿去测试、演示、联调，都像真数据。</p>
+    <div class="fmt-chips">
+      <span>.xlsx<small>多 Sheet 全保留，名称与顺序不变</small></span>
+      <span>.xls<small>多 Sheet 全保留，名称与顺序不变</small></span>
+      <span>.csv<small>自动识别并保持编码 / 分隔符 / 换行符</small></span>
+      <span class="dim">.json / .jsonl / .parquet<small>后续版本规划</small></span>
+    </div>
+    <div class="feat-grid">
+      <div class="feat">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg></div>
+        <h3>目录 1:1 镜像</h3>
+        <p>目标目录 1:1 镜像源目录结构（含空文件夹），同名同格式原位对照，拿到哪层都对应得上。</p>
+      </div>
+      <div class="feat">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+        <h3>几十 GB 不卡死</h3>
+        <p>大文件流式读取头部数据，只碰文件开头，几十 GB 的文件也能秒级出样。</p>
+      </div>
+      <div class="feat">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <h3>实时预览 所见即所得</h3>
+        <p>界面实时预览表头与前若干行，导出前就知道样例长什么样。</p>
+      </div>
+      <div class="feat">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg></div>
+        <h3>全局 + 单文件两级行数</h3>
+        <p>抽样行数两级可控：全局默认值之外，可对单个文件单独指定；填 0 即仅保留表头。</p>
+      </div>
+      <div class="feat">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/><circle cx="11" cy="13" r="3"/><line x1="16" y1="18" x2="13.5" y2="15.5"/></svg></div>
+        <h3>递归扫描 按格式过滤</h3>
+        <p>递归扫描源目录、按格式过滤；非数据文件可跳过，也可原样复制保持目录完整。</p>
+      </div>
+      <div class="feat">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/><line x1="12" y1="22" x2="12" y2="2" opacity="0"/><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <h3>进度与汇总 清清楚楚</h3>
+        <p>实时进度、逐文件日志、体积缩减汇总，一次导出多少、省了多少，一目了然。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 下载 ============ -->
+  <section class="block" id="download">
+    <h2 class="title">从微软商店下载</h2>
+    <p class="lead">Microsoft Store 是唯一权威下载渠道，当前公测期全功能免费。</p>
+    <div class="download-card">
+      <a class="btn btn-primary big-btn" href="https://apps.microsoft.com/detail/9P30MRGVSPJV">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        获取做个样子 JustForShow
+      </a>
+      <p class="download-note">商店页面：apps.microsoft.com/detail/9P30MRGVSPJV · 反馈邮箱：<a href="mailto:feed@weibaba.fun">feed@weibaba.fun</a></p>
+    </div>
+    <div class="shot">界面截图 · 即将补充</div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="cols">
+      <div style="max-width:320px">
+        <h4>做个样子 JustForShow</h4>
+        <p>批量提取数据文件的表头与前 N 行样例，1:1 镜像目录结构，秒级生成轻量测试数据集。</p>
+      </div>
+      <div>
+        <h4>产品</h4>
+        <ul>
+          <li><a href="#features">核心功能</a></li>
+          <li><a href="#download">下载</a></li>
+          <li><a href="https://apps.microsoft.com/detail/9P30MRGVSPJV">微软商店</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>支持</h4>
+        <ul>
+          <li>反馈邮箱：<a href="mailto:feed@weibaba.fun">feed@weibaba.fun</a></li>
+          <li><span class="lang-switch-inline"><a href="/en/" hreflang="en" lang="en">English</a></span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>法律</h4>
+        <ul>
+          <li><a href="/privacy/">隐私政策 / Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal">© 2026 Weibaba. All rights reserved. · 本站为纯静态页面，不收集任何数据</p>
+  </div>
+</footer>
+
+</body>
+</html>

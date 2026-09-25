@@ -1,0 +1,27 @@
+# 做个样子 JustForShow 官网仓库 — git 忽略清单
+# 站点为纯静态文件，仅需排除系统杂物与本地临时内容
+
+# OS junk / user traces
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+*.stackdump
+
+# Editor / tool local state
+.idea/
+.vscode/
+*.swp
+
+# Local temp (scripts, drafts) — 不入库
+tmp/
+
+# Local server / logs
+*.log
+nohup.out
+
+# Never commit secrets or local env
+.env*
+*.pem
+*.key
+wrangler.toml
