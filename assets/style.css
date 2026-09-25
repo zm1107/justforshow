@@ -135,11 +135,11 @@ p.lead { color: var(--sub); max-width: 720px; margin-bottom: 26px; }
 
 /* ---------- 截图占位 ---------- */
 .shot {
-  border-radius: 12px; border: 1px dashed #d8b791; background:
-  repeating-linear-gradient(45deg,#fbf4ec,#fbf4ec 14px,#f6f7f9 14px,#f6f7f9 28px);
-  display: flex; align-items: center; justify-content: center;
-  color: var(--sub); font-size: 14px; height: 300px; margin: 26px 0 8px;
+  width: 100%; max-width: 1160px; margin: 18px auto 0;
+  border: 1px solid var(--line); border-radius: 12px; overflow: hidden;
+  box-shadow: 0 10px 34px rgba(43, 47, 54, .10);
 }
+.shot img { display: block; width: 100%; height: auto; }
 
 /* ---------- 页脚 ---------- */
 footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 30px 0 44px;
