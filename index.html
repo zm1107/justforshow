@@ -45,8 +45,13 @@
 <header class="hero">
   <div class="container">
     <div class="hero-card">
-      <img class="hero-banner" src="/assets/img/web_logo.png" alt="做个样子 JustForShow">
-      <h1>大文件做样，<span class="key">结构全保留</span></h1>
+      <div class="hero-head">
+        <img class="hero-logo" src="/assets/img/app_icon.png" alt="做个样子 JustForShow" width="80" height="80">
+        <div>
+          <h1 class="hero-name">做个样子 <span class="en-name">JustForShow</span></h1>
+          <p class="hero-slogan">大文件做样，<span class="key">结构全保留</span></p>
+        </div>
+      </div>
       <p class="pitch">批量提取数据文件的表头与前 N 行样例，1:1 镜像目录结构，秒级生成轻量测试数据集。</p>
       <p class="sub">完全本地运行：不联网、不上传任何数据、不收集任何统计信息。</p>
       <div class="platform-pills">
@@ -131,6 +136,20 @@
       <img src="/assets/img/shot-main.png" alt="做个样子 JustForShow 界面——文件列表与数据预览" width="1200" height="423" loading="lazy">
     </figure>
   </section>
+
+  <!-- ============ 请作者喝咖啡 ============ -->
+  <div class="sponsor">
+    <h3>帮到了你？请作者喝杯咖啡<button class="coffee-btn" type="button" aria-label="微信收款码" title="点我，请作者喝杯咖啡" onclick="var m=document.getElementById('qr-modal');m.style.display=(m.style.display==='flex')?'none':'flex';">☕</button></h3>
+    <p>做个样子 由独立开发者维护。赞助不会带来任何功能差异，只带来持续更新的动力。</p>
+  </div>
+
+  <div id="qr-modal" class="qr-modal" onclick="this.style.display='none'">
+    <div class="qr-card" onclick="event.stopPropagation()">
+      <img src="assets/img/donate_qr.jpg" alt="微信收款码">
+      <span>微信扫一扫 · 请作者喝杯咖啡</span>
+      <button type="button" onclick="document.getElementById('qr-modal').style.display='none'">✕</button>
+    </div>
+  </div>
 
 </main>
 

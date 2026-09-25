@@ -45,7 +45,13 @@
 <header class="hero">
   <div class="container">
     <div class="hero-card">
-      <img class="hero-banner" src="/assets/img/web_logo.png" alt="JustForShow">
+      <div class="hero-head">
+        <img class="hero-logo" src="/assets/img/app_icon.png" alt="JustForShow" width="80" height="80">
+        <div>
+          <h1 class="hero-name">JustForShow</h1>
+          <p class="hero-slogan">Big files, <span class="key">light samples</span></p>
+        </div>
+      </div>
       <h1>Big files, light samples.<br><span class="key">Structure fully preserved.</span></h1>
       <p class="pitch">Batch-extract the header and first N rows of your data files into a 1:1 mirrored folder structure, producing a lightweight sample dataset in seconds.</p>
       <p class="sub">Runs entirely on your machine: no network access, no uploads, no telemetry.</p>
@@ -131,6 +137,21 @@
       <img src="/assets/img/shot-main.png" alt="JustForShow UI - file list and data preview" width="1200" height="423" loading="lazy">
     </figure>
   </section>
+
+
+  <!-- ============ Buy the developer a coffee ============ -->
+  <div class="sponsor">
+    <h3>Found it useful? Buy the developer a coffee<button class="coffee-btn" type="button" aria-label="WeChat QR code" title="Click to buy a coffee" onclick="var m=document.getElementById('qr-modal');m.style.display=(m.style.display==='flex')?'none':'flex';">☕</button></h3>
+    <p>JustForShow is maintained by an independent developer. Sponsorship brings no functional difference — just the motivation to keep updating.</p>
+  </div>
+
+  <div id="qr-modal" class="qr-modal" onclick="this.style.display='none'">
+    <div class="qr-card" onclick="event.stopPropagation()">
+      <img src="../assets/img/donate_qr.jpg" alt="WeChat QR code">
+      <span>WeChat Scan · Buy a coffee</span>
+      <button type="button" onclick="document.getElementById('qr-modal').style.display='none'">✕</button>
+    </div>
+  </div>
 
 </main>
 
