@@ -10,7 +10,7 @@
 为做个样子 JustForShow（数据文件样例提取工具，Windows）建设官方产品站，结构与风格对齐同作者的 PassGone / ExifMate 官网仓库，视觉采用白卡片风格与应用界面一致。
 
 - 域名：`https://justforshow.weibaba.fun`（全局规范第 12 条默认口径）。
-- 反馈邮箱：`feed@weibaba.fun`；版权：© 2026 Weibaba. All rights reserved.
+- 反馈邮箱：`feedback@weibaba.fun`；版权：© 2026 Weibaba. All rights reserved.
 - 下载入口：微软商店 `https://apps.microsoft.com/detail/9P30MRGVSPJV`（唯一权威渠道，来源应用仓库 `store/identity.md`，Store ID `9P30MRGVSPJV`）。
 - 公测口径：当前为公测期，全功能免费，无任何限制（来源应用仓库 `README.md`）。
 - 站点红线（硬性）：纯静态、零追踪——无统计/分析、无任何外部资源请求（无 CDN 字体、外链图片）、无 Cookie、无表单、无服务端代码；全站无 JS（`<a href>` 外链导航除外）；仓库内不得出现用户数据、操作日志、凭据、本机路径。
@@ -79,3 +79,4 @@ SEO：每页 title/description/canonical/og 全套；`hreflang` 三向声明（z
 | v1.0.1 | 2026-09-25 | Hero 融合优化：底色改为 logo 边缘采样的冷调同源渐变（#FEFEFE→#ECEFF4）叠加品牌橙 7% 顶部微光；logo 横幅 780px 全宽、去圆角，左右各 5.5% 线性羽化（约 43px）消融矩形边界；解决「logo 与背景分离」反馈 |
 | v1.0.2 | 2026-09-26 | 接入用户提供的干净界面截图（宽幅 1200×422，演示数据树+脱敏路径，经视觉核验无本机路径无真实数据），替换中英两页截图占位；.shot 由虚线占位框改为带阴影图片容器 |
 | v1.0.3 | 2026-09-26 | Hero 改方形 logo 紧凑布局（app_icon 80px + 左右排列，弃宽幅横幅）；新增「请作者喝咖啡 ☕」赞助区（跳动咖啡按钮 + 收款码弹层，参照 PassGone 模式）；中英同步 |
+| v1.0.5 | 2026-09-26 | 反馈邮箱统一为 feedback@weibaba.fun（全局规范第 12 条修订），全站 mailto/文内引用同步 |

@@ -47,5 +47,5 @@ docs/site-design.md      站点需求与设计文档（含版本表，口径变�
 
 ## 反馈与联系
 
-- 反馈邮箱：[feed@weibaba.fun](mailto:feed@weibaba.fun)
+- 反馈邮箱：[feedback@weibaba.fun](mailto:feedback@weibaba.fun)
 - 安全问题：见 [.well-known/security.txt](.well-known/security.txt)
